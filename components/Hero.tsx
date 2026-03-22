@@ -13,7 +13,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 md:px-6 overflow-hidden">
       {/* Decorative gold dots */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(6)].map((_, i) => (
@@ -34,7 +34,7 @@ export default function Hero() {
               delay: i * 0.7,
             }}
           >
-            \u2726
+            &#x2726;
           </motion.span>
         ))}
       </div>
@@ -44,14 +44,14 @@ export default function Hero() {
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-        className="mb-8"
+        className="mb-6 md:mb-8"
       >
         <Image
           src="/logo.png"
           alt="Dime Archives"
           width={120}
           height={120}
-          className="w-24 h-24 md:w-32 md:h-32 object-contain"
+          className="w-20 h-20 md:w-32 md:h-32 object-contain"
           priority
         />
       </motion.div>
@@ -61,7 +61,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.4 }}
-        className="font-playfair italic text-green-dark text-4xl md:text-6xl lg:text-7xl text-center leading-tight mb-4"
+        className="font-playfair italic text-green-dark text-3xl md:text-6xl lg:text-7xl text-center leading-tight mb-3 md:mb-4"
       >
         Felicidades por tu nueva compu
       </motion.h1>
@@ -71,26 +71,25 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.7 }}
-        className="font-courier text-green-medium text-lg md:text-xl mb-12 text-center"
+        className="font-courier text-green-medium text-base md:text-xl mb-10 md:mb-12 text-center"
       >
-        \u2014 un regalo de B para Sol
+        &mdash; un regalo de B para Sol
       </motion.p>
 
-      {/* Accept button */}
+      {/* Buttons */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.0 }}
-        className="flex flex-col items-center gap-6 w-full max-w-md"
+        className="flex flex-col items-center gap-4 md:gap-6 w-full max-w-md"
       >
         <button
           onClick={scrollToContent}
-          className="px-8 py-4 bg-green-dark text-bg-cream font-courier rounded-lg text-lg hover:bg-green-medium transition-colors duration-300 shadow-lg hover:shadow-xl"
+          className="px-6 md:px-8 py-3 md:py-4 bg-green-dark text-bg-cream font-courier rounded-lg text-base md:text-lg hover:bg-green-medium transition-colors duration-300 shadow-lg hover:shadow-xl"
         >
-          \u00a1Gracias! Me encanta \u2661
+          &iexcl;Gracias! Me encanta &#x2661;
         </button>
 
-        {/* Runaway button */}
         <RunawayButton />
       </motion.div>
 
@@ -99,14 +98,14 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-8"
+        className="absolute bottom-6 md:bottom-8"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-green-dark/30 rounded-full flex items-start justify-center p-1.5"
+          className="w-5 h-8 md:w-6 md:h-10 border-2 border-green-dark/30 rounded-full flex items-start justify-center p-1 md:p-1.5"
         >
-          <motion.div className="w-1.5 h-1.5 bg-green-dark/40 rounded-full" />
+          <motion.div className="w-1 h-1 md:w-1.5 md:h-1.5 bg-green-dark/40 rounded-full" />
         </motion.div>
       </motion.div>
     </section>
