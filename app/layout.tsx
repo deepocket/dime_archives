@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Dime Archives — Para Sol',
-  description: 'Una carta de amor en forma de p\u00e1gina web. De B para Sol.',
+  description: 'Una carta de amor en forma de página web. De B para Sol.',
 }
 
 export default function RootLayout({

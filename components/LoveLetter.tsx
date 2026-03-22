@@ -26,23 +26,23 @@ export default function LoveLetter() {
             </p>
 
             <p>
-              Estar\u00e9 eternamente agradecido contigo, siempre.
+              Estaré eternamente agradecido contigo, siempre.
             </p>
 
             <p>
-              Quisiera haber sido esa persona que te acompa\u00f1ar\u00e1 en todo tu camino. Anhelo con mi alma tener una oportunidad de poder hablar de vuelta como antes.
+              Quisiera haber sido esa persona que te acompañará en todo tu camino. Anhelo con mi alma tener una oportunidad de poder hablar de vuelta como antes.
             </p>
 
             <p>
-              Gracias por dejarme cuidarte. Por aprender juntos. Por re\u00edrnos tanto. Por platicar como nunca. Y por hacerme tan, pero tan, pero tan feliz.
+              Gracias por dejarme cuidarte. Por aprender juntos. Por reírnos tanto. Por platicar como nunca. Y por hacerme tan, pero tan, pero tan feliz.
             </p>
 
             <p>
-              Fui el hombre m\u00e1s afortunado de la tierra...
+              Fui el hombre más afortunado de la tierra...
             </p>
 
             <p>
-              Bueno, lo sigo siendo, porque te conoc\u00ed.
+              Bueno, lo sigo siendo, porque te conocí.
             </p>
 
             <motion.p
@@ -52,7 +52,7 @@ export default function LoveLetter() {
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 1 }}
             >
-              \u2014B
+              —B
             </motion.p>
           </div>
         </motion.div>

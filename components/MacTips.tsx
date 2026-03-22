@@ -6,70 +6,70 @@ import { motion } from 'framer-motion'
 
 const tips = [
   {
-    emoji: '\ud83d\udd0d',
+    emoji: '🔍',
     title: 'Spotlight es tu mejor amigo',
-    description: 'Cmd + Espacio abre Spotlight. Busca apps, archivos, hasta operaciones matem\u00e1ticas. Es como Google pero para tu compu.',
+    description: 'Cmd + Espacio abre Spotlight. Busca apps, archivos, hasta operaciones matemáticas. Es como Google pero para tu compu.',
   },
   {
-    emoji: '\ud83d\udcf8',
+    emoji: '📸',
     title: 'Screenshots como pro',
-    description: 'Cmd + Shift + 3 captura toda la pantalla. Cmd + Shift + 4 te deja seleccionar un \u00e1rea. Cmd + Shift + 5 abre opciones avanzadas.',
+    description: 'Cmd + Shift + 3 captura toda la pantalla. Cmd + Shift + 4 te deja seleccionar un área. Cmd + Shift + 5 abre opciones avanzadas.',
   },
   {
-    emoji: '\ud83d\udd90\ufe0f',
-    title: 'El trackpad es m\u00e1gico',
+    emoji: '🖐️',
+    title: 'El trackpad es mágico',
     description: 'Dos dedos para scroll. Tres dedos arriba para ver todas las ventanas. Pellizca para zoom. Desliza con dos dedos desde la derecha para notificaciones.',
   },
   {
-    emoji: '\ud83d\udccb',
+    emoji: '📋',
     title: 'Copiar y pegar',
-    description: 'Cmd + C para copiar, Cmd + V para pegar. En Mac es Cmd (\u2318), no Ctrl como en Windows.',
+    description: 'Cmd + C para copiar, Cmd + V para pegar. En Mac es Cmd (⌘), no Ctrl como en Windows.',
   },
   {
-    emoji: '\ud83d\udd04',
+    emoji: '🔄',
     title: 'Cerrar vs minimizar',
-    description: 'El bot\u00f3n rojo cierra la ventana pero no la app. Para cerrar la app: Cmd + Q. Para cambiar entre apps: Cmd + Tab.',
+    description: 'El botón rojo cierra la ventana pero no la app. Para cerrar la app: Cmd + Q. Para cambiar entre apps: Cmd + Tab.',
   },
   {
-    emoji: '\ud83d\udcbe',
+    emoji: '💾',
     title: 'iCloud es tu nube',
-    description: 'Tus fotos, documentos y notas se sincronizan autom\u00e1ticamente con tu iPhone. Todo conectado.',
+    description: 'Tus fotos, documentos y notas se sincronizan automáticamente con tu iPhone. Todo conectado.',
   },
   {
-    emoji: '\ud83c\udf19',
+    emoji: '🌙',
     title: 'Dark Mode',
-    description: 'Ve a Configuraci\u00f3n > Apariencia y activa el modo oscuro. Se ve hermoso.',
+    description: 'Ve a Configuración > Apariencia y activa el modo oscuro. Se ve hermoso.',
   },
   {
-    emoji: '\ud83c\udfb5',
+    emoji: '🎵',
     title: 'AirDrop',
     description: 'Comparte fotos, archivos y links entre tu Mac y tu iPhone al instante. Solo activa AirDrop en ambos dispositivos.',
   },
   {
-    emoji: '\ud83d\udcf1',
+    emoji: '📱',
     title: 'Continuidad',
-    description: 'Puedes copiar algo en tu iPhone y pegarlo en tu Mac (y viceversa). Tambi\u00e9n puedes contestar llamadas y mensajes desde la Mac.',
+    description: 'Puedes copiar algo en tu iPhone y pegarlo en tu Mac (y viceversa). También puedes contestar llamadas y mensajes desde la Mac.',
   },
   {
-    emoji: '\ud83d\udd12',
+    emoji: '🔒',
     title: 'Touch ID',
-    description: 'Tu Mac tiene Touch ID. \u00dasalo para desbloquear, comprar en la App Store y autocompletar contrase\u00f1as.',
+    description: 'Tu Mac tiene Touch ID. Úsalo para desbloquear, comprar en la App Store y autocompletar contraseñas.',
   },
 ]
 
 const apps = [
-  { emoji: '\ud83e\udd16', name: 'Claude', description: 'App de IA' },
-  { emoji: '\ud83d\udcdd', name: 'Coconote', description: 'Notas de reuniones con IA' },
-  { emoji: '\u26a1', name: 'Raycast', description: 'Launcher, reemplazo de Spotlight' },
-  { emoji: '\ud83c\udfb5', name: 'Spotify', description: 'M\u00fasica' },
-  { emoji: '\ud83c\udfa8', name: 'Canva', description: 'Dise\u00f1o gr\u00e1fico' },
-  { emoji: '\ud83d\udcca', name: 'Excel', description: 'Hojas de c\u00e1lculo' },
-  { emoji: '\ud83c\udf19', name: 'f.lux', description: 'Protecci\u00f3n de luz azul' },
-  { emoji: '\u26d4', name: 'Cold Turkey', description: 'Bloqueador de distracciones' },
+  { emoji: '🤖', name: 'Claude', description: 'App de IA' },
+  { emoji: '📝', name: 'Coconote', description: 'Notas de reuniones con IA' },
+  { emoji: '⚡', name: 'Raycast', description: 'Launcher, reemplazo de Spotlight' },
+  { emoji: '🎵', name: 'Spotify', description: 'Música' },
+  { emoji: '🎨', name: 'Canva', description: 'Diseño gráfico' },
+  { emoji: '📊', name: 'Excel', description: 'Hojas de cálculo' },
+  { emoji: '🌙', name: 'f.lux', description: 'Protección de luz azul' },
+  { emoji: '⛔', name: 'Cold Turkey', description: 'Bloqueador de distracciones' },
 ]
 
 const resources = [
-  { title: 'Gu\u00eda oficial de macOS', url: 'https://support.apple.com/es-mx/guide/mac-help/mchl3a2c2cb0/mac' },
+  { title: 'Guía oficial de macOS', url: 'https://support.apple.com/es-mx/guide/mac-help/mchl3a2c2cb0/mac' },
   { title: 'Hub USB-C recomendado', url: 'https://www.amazon.com.mx/TP-Link-microSD-Compatible-ChromeOS-UH7020C/dp/B0DT1MB534/ref=asc_df_B0DT1MB534?mcid=6c539b7f66433cc29b81e4e6fe6f0ec9&tag=gledskshopmx-20&linkCode=df0&hvadid=730033385251&hvpos=&hvnetw=g&hvrand=17933610371124177936&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9211336&hvtargid=pla-2400803934423&hvocijid=17933610371124177936-B0DT1MB534-&hvexpln=0&language=es_MX&th=1' },
   { title: 'Travel Organizer para tu Mac', url: 'https://www.apple.com/shop/product/hrjm2zm/a/bellroy-travel-organizer-black?fnode=8cb76d623f8afdece31b8194d98b558cea52f77e7c000d7b8be709ac4db11e5000c013eca64250a3619806305a2b4d48838af4b837a764e2d7bc21ad9090be9e4252c250493b61fa817df8e22dd517ed8b99d2ebb9aa7d7d5ff057f8c1f3b289c9e746005a2f6cfb57f4f9670e5018e8&fs=f%3Dmacbookneoa18pro%26fh%3D4592%252Bd63cbf' },
   { title: 'Tips para tu nueva Mac (video)', url: 'https://youtu.be/Kft9Y33oc2I?si=0Tszm-3A-1HlSSdL' },
@@ -132,7 +132,7 @@ export default function MacTips() {
       <div className="max-w-3xl mx-auto mt-20">
         <ScrollReveal className="text-center mb-10">
           <h3 className="font-playfair italic text-green-dark text-2xl md:text-4xl">
-            Recursos \u00fatiles
+            Recursos útiles
           </h3>
         </ScrollReveal>
 
